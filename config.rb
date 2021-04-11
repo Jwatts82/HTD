@@ -38,11 +38,11 @@ activate :livereload
 #   end
 # end
 
-helpers do
-  def nav_active(page)
-    @page_id == page ? {:class => "Active"} : {}
-  end
-end
+# helpers do
+#   def nav_active(page)
+#     @page_id == page ? {:class => "Active"} : {}
+#   end
+# end
 
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
