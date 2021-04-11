@@ -44,3 +44,8 @@ page '/*.txt', layout: false
 #   activate :minify_css
 #   activate :minify_javascript
 # end
+
+#Reload the browser automatically whenever files change
+configure :development do
+  activate :livereload
+end
