@@ -74,6 +74,13 @@ img {
   font-weight: 400;
 }
 
+.img-responsive {
+  height: auto;
+  width: auto;
+  max-height: 72px;
+  max-width: 250px;
+}
+
 /* Header */
 .hero {
   background: url('../images/mountain.jpg') no-repeat center center/cover;
@@ -116,9 +123,32 @@ img {
   z-index: 10;
 }
 
-.hero.about {
+/* About */
+
+.about {
   background: url('../images/blog1.jpg') no-repeat center center/cover;
   height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  // height: 100%;
+  padding: 0 20px;
+}
+
+.title h1 {
+  font-weight: 500;
+}
+
+.title {
+  justify-content: center;
+  text-align: center;
+}
+
+.testimonials {
+  justify-content: center;
+  text-align: center;
 }
 
 /* icons */
@@ -215,8 +245,8 @@ img {
 
 .btn-secondary,
 .bg-secondary {
-  background: #0284d0;
-  color: #fff;
+  background: #e4e5e6;
+  color: rgb(0, 0, 0);
 }
 
 .btn-dark,
@@ -255,6 +285,7 @@ img {
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  padding: 30px;
 }
 
 .flex-columns .column {
@@ -275,7 +306,7 @@ img {
   object-fit: cover;
 }
 
-.flex-columns .column-2 {
+.flex-columns .column-2 .column-1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -324,4 +355,44 @@ img {
 .callback-form .btn {
   padding: 12px 0;
   margin-top: 20px;
+}
+
+// .btn .contact {
+//   display: inline-block;
+//   padding: 0.35em 1.2em;
+//   border: 0.1em solid #ffffff;
+//   margin: 0 0.3em 0.3em 0;
+//   border-radius: 0.12em;
+//   box-sizing: border-box;
+//   text-decoration: none;
+//   font-family: 'Roboto', sans-serif;
+//   font-weight: 300;
+//   color: #ffffff;
+//   text-align: center;
+//   transition: all 0.2s;
+// }
+
+// a.button1:hover {
+//   color: #28a745;
+//   background-color: #ffffff;
+// }
+
+// @media all and (max-width: 30em) {
+//    a.button1 {
+//     display: block;
+//     margin: 0.4em auto;
+//   }
+// }
+
+// Contact
+.contact {
+  background: url('../images/contact.jpg') no-repeat center center/cover;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  // height: 100%;
+  padding: 0 20px;
 }
